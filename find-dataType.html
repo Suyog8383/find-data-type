@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  //   1.enter the value
+  //   2.call function
+  // 3.check the typeof value
+
+  function findDataType(value) {
+    if (typeof value === "number") {
+      console.log("Enter value is Number");
+    } else if (value === null || typeof value === "undefined") {
+      console.log("Enter Valid Input");
+    } else if (typeof value === "string") {
+      console.log("Enter value is String");
+    } else if (typeof value === "boolean") {
+      console.log("Enter value is boolean");
+    } else if (typeof value === "function") {
+      console.log("Enter value is function");
+    } else if (typeof value === "object") {
+      console.log("Enter value is object");
+    } else if (typeof value === "symbol") {
+      console.log("Enter value is Symbol");
+    }
+    return;
+  }
+  findDataType({ name: "suyog" });
+</script>
